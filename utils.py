@@ -16,14 +16,14 @@ from parfam_torch import ParFamTorch
 import math
 import logging
 
-import resource
+# import resource
 import psutil
 import copy
 
-def using(point=""):
-    usage=resource.getrusage(resource.RUSAGE_SELF)
-    # you can convert that object to a dictionary 
-    return f'{point}: mem (CPU python)={usage[2]/1024.0}MB; mem (CPU total)={dict(psutil.virtual_memory()._asdict())["used"] / 1024**2}MB'
+# def using(point=""):
+#     usage=resource.getrusage(resource.RUSAGE_SELF)
+#     # you can convert that object to a dictionary
+#     return f'{point}: mem (CPU python)={usage[2]/1024.0}MB; mem (CPU total)={dict(psutil.virtual_memory()._asdict())["used"] / 1024**2}MB'
 
 # Gets real formula of regression problem: only works for feynman so far
 # feynman_formulas = pd.read_csv(os.path.join(os.path.dirname(__file__), "feynman_formulas"), names=['Index', 'Name', 'Formula'])
