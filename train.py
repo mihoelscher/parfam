@@ -17,12 +17,12 @@ import pandas as pd
 
 from parfam_torch import ParFamTorch, Evaluator
 # from reparfam import ReParFam
-from utils import add_noise, relative_l2_distance, r_squared, is_tuple_sorted, function_dict, function_name_dict
-import utils
+from parfam.utils import add_noise, relative_l2_distance, r_squared, is_tuple_sorted, function_dict, function_name_dict
+import parfam.utils
 from pathlib import Path
 import configparser
 
-from utils import add_noise, relative_l2_distance, r_squared, get_complete_model_parameter_list, SetTransformer, tensor_to_model_parameters
+from parfam.utils import add_noise, relative_l2_distance, r_squared, get_complete_model_parameter_list, SetTransformer, tensor_to_model_parameters
 from trainingOnSyntheticData.test_dlparfam import get_topk_predictions, filter_predictions
 sys.path.append(os.path.dirname(os.getcwd()))
 from multiprocessing import Process, Event, Manager, Lock

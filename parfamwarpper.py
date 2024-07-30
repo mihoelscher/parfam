@@ -1,5 +1,5 @@
 from train import model_parameter_search, extend_function_dict, setup_model, finetune_coeffs
-from utils import relative_l2_distance
+from parfam.utils import relative_l2_distance
 import random
 import torch
 from sklearn.model_selection import train_test_split

@@ -19,7 +19,7 @@ import ast
 # from srbench.utils import get_formula
 sys.path[0] = os.getcwd()
 print(os.getcwd())
-from utils import create_dataset
+from parfam.utils import create_dataset
 from parfam_torch import ParFamTorch, Evaluator
 
 import utils
